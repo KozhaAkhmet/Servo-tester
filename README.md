@@ -18,7 +18,7 @@ Ingredients :
 We need to find value a for the starting point on **first** potentiometer which measures the servo angle to make it more precise. We need to turn the potentiometer slightly to get a value that is close to the starting point. Otherwise it measures the unnecessary part. 
 
  ## I marked the starting point to help when i mount servo attacher...
-![1](/Servo_tester/1.png)
+![1](/images/1.png)
 
 Then we rotate that potentiometer by 180 deg then note the measured value. We can use this while converting potentiometer's value to degree.
 
