@@ -114,34 +114,35 @@ Enable it on setup
     }
 ```
 ```c
-    display.clearDisplay();
-  display.setTextSize(1);                //Prepairing for printing
-  display.setTextColor(SSD1306_WHITE);   //
+  display.clearDisplay();
+  
+  display.setTextSize(1); 
+  display.setTextColor(SSD1306_WHITE);
   
   display.setCursor(0,0);
   display.print(F("Pot1:"));
   display.print(data[0]);
-  
+
   display.setCursor(0,8);
+  display.print(F("Ang:"));
+  display.print(data[2]);
+  //2nd coulomb
+  display.setCursor(70,0);
   display.print(F("Pot2:"));
   display.print(data[1]);
-  
-  display.setCursor(0,16);
-  display.print(F("Pot1 Ang:"));
-  display.print(data[2]);
-  
-  display.setCursor(0,24);
-  display.print(F("Pot2 Ang:"));
-  display.print(data[3]);
-  //2nd coulomb
-  display.setCursor(75,16);
-  display.print(F("Dif:"));
-  display.print(data[3]-data[2]);         //difference between pot angles
 
-  display.setCursor(75,24);             
+  display.setCursor(70,8);
+  display.print(F("Ang:"));
+  display.print(data[3]);
+           
+  display.setCursor(30,24);             
   display.print(F("Per:"));
   display.print((5* (data[3]-data[2]))/9); //mistake persentage between angles
   display.print(F("%"));
+  
+  display.setCursor(30,16);
+  display.print(F("Dif:~"));
+  display.print(data[3]-data[2]);  //difference between pot angles
   
   display.display();   //This needed to enable changes on screen
 
