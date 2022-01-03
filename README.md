@@ -34,9 +34,9 @@ Then tinkering..
 ![1](images/IMG_20220101_182711.jpg)
 ![1](images/IMG_20220101_215255.jpg)
 ## I add 47uf condensator to compensate consumptions...
-![1](/Servo_tester/IMG_20220101_225646.jpg)
+![1](/images/IMG_20220101_225646.jpg)
 ## Made little platform for servo...
-![1](/Servo_tester/IMG_20220102_024539.jpg)
+![1](/images/IMG_20220102_024539.jpg)
 #
 # Software
 At this part i used this Libraries:
