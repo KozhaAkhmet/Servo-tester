@@ -42,12 +42,10 @@ Then tinkering..
 At this part i used this Libraries:
 ```c
     #include <stdlib.h>            //For Pointers
-    #include <SPI.h>
-    #include <Wire.h>
     #include <Servo.h>             //Library for servos
     #include <Adafruit_GFX.h>      //These are for OLED screen
     #include <Adafruit_SSD1306.h>  //
-    #include <stdarg.h>
+    #include <stdarg.h>            //For Formatted String logs
 ```
 
 Making a memory allocation and creating values in a pointer array.
