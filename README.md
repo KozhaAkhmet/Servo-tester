@@ -2,13 +2,11 @@
 ## About 
 Many servos have factory defects where servo can`t make correct angles.
  
- This problem can be fixed with map() funtion. This function is used to change from range to another.
+This problem can be fixed with the map() function. This function is used to change the range of potentiometer. But to find correct numbers of that ranges we need to measure reel angles from servo. For this i will use potentiometer.
 
-But to find correct numbers of that ranges we need to measure reel angles from servo. For this i will use potentiometer.
+When you are working on big projects where you use much more servos and also use precised movements it needs practical devices. Then I thought about making a Servo Tester that can quickly and precisely correct servo angles. I made it for my next Quadruped V2 in which I will be using 12 servos. 
 
-When you working on big projects where you use much more servos and also use precised movements it needs practical devices. Then I think to make Servo Tester where you can fastly and precisely correct servo angles. I made it for my next Quadruped V2 where I use 12 servos. 
-
-All parts that needed is :
+Ingredients :
 - Arduino Nano 
 - OLED 128x32
 - Servo 
@@ -17,14 +15,14 @@ All parts that needed is :
 - 47uf condensator or more
 - PCB Prototype Board
   
-We need to find value of starting point on **first** potentiometer which measure servo angle to make it more perceive. We need to turn potentiometer a little were value is neer to 1. Otherwise it measure null side. 
+We need to find value a for the starting point on **first** potentiometer which measures the servo angle to make it more precise. We need to turn the potentiometer slightly to get a value that is close to the starting point. Otherwise it measures the unnecessary part. 
 
- ## I marked starting point to help when i mount servo attacher...
+ ## I marked the starting point to help when i mount servo attacher...
 ![1](/Servo_tester/1.png)
 
-Then turn that potentiometer to make 180 deg then note measured value. We use this when convert potentiometer value to degree.
+Then we rotate that potentiometer by 180 deg then note the measured value. We can use this while converting potentiometer's value to degree.
 
-We did not do it on **second** potentiometer.
+This process is required only for the first time.
 
 Then tinkering..
 #
@@ -52,15 +50,15 @@ At this part i used this Libraries:
     #include <stdarg.h>
 ```
 
-Making an memory allocation and creating values in pointer array.
+Making a memory allocation and creating values in a pointer array.
 ```c
     int *data = (int*)malloc(4*sizeof(int));     
 ```
-Value of first potentiometer..
+Value of the first potentiometer..
 ```c
     data[0]=analogRead(pot_pin1); //
 ```
-Value of second potentiometer..
+Value of the second potentiometer..
 ```c
     data[1]=analogRead(pot_pin2); //Value of s
 ```
@@ -68,19 +66,19 @@ Value of second potentiometer..
 ```c
     data[2]=map(analogRead(pot_pin1),0,669,0,180);
 ```
-Converting  second potentiometer values to angles...
+Converting  second potentiometer's value to angle...
 ```c
     data[3]=map(analogRead(pot_pin2),0,1023,270,0);
 ```
 #
-##  void seriallogDetailes(int *data)
-This function for printing values on Serial port.
+##  void seriallogDetails(int *data)
+This function for printing logs for the Serial port.
 ```c
     serialPrintf("pot1: %4d\tpot2: %4d\tangle1: %3d\tangle2: %3d\n",data[0],data[1],data[2],data[3]);
 ```
-Arduino not able to print with **Formatted string**.
+Arduino can not print **Formatted string**.
 
-To make it possible i added this from this [site](https://medium.com/@kslooi/print-formatted-data-in-arduino-serial-aaea9ca840e3).
+To make it possible I added following function from this [site](https://medium.com/@kslooi/print-formatted-data-in-arduino-serial-aaea9ca840e3).
 ```C
     #include <stdarg.h>
 
@@ -97,7 +95,7 @@ To make it possible i added this from this [site](https://medium.com/@kslooi/pri
 ```
 
 ## void oledLogDetailes(int *data )
-This function for printing values on OLED screen.
+This function for printing values to the OLED screen.
 it needs do define this libraries. You can find that on Arduino Library Manager.
 ```c
     #include <Adafruit_GFX.h>
