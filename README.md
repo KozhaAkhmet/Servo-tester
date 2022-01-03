@@ -136,12 +136,12 @@ Enable it on setup
   display.print(data[3]);
            
   display.setCursor(30,24);             
-  display.print(F("Per:"));
+  display.print(F("Per:~"));
   display.print((5* (data[3]-data[2]))/9); //mistake persentage between angles
   display.print(F("%"));
   
   display.setCursor(30,16);
-  display.print(F("Dif:~"));
+  display.print(F("Dif:"));
   display.print(data[3]-data[2]);  //difference between pot angles
   
   display.display();   //This needed to enable changes on screen
