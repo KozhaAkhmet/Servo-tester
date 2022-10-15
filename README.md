@@ -1,4 +1,5 @@
 # Servo Tester V0
+<img src="images/IMG_20220102_024539.jpg" alt="drawing" width="100%"/>
 
 Main purpose of the servo is to turn to given angle. But unfortunately servos like SG90 and MG90 could`t do it properly. Due to that factory defect, it causes wrong computations. 
 
@@ -17,22 +18,10 @@ The idea is to give input througt first potentiometer and attach servo to second
  
 # Hardware
 
-//TODO Shematics
-
-I measured potentiometer to achive getting input only when lever is parall to the board. Then I embed all other parts.
-
-<img src="images/IMG_20220101_171009.jpg" alt="drawing" width="200"/>
-<img src="images/IMG_20220101_173322.jpg" alt="drawing" width="200"/>
-<img src="images/IMG_20220101_182704.jpg" alt="drawing" width="200"/>
-<img src="images/IMG_20220101_182711.jpg" alt="drawing" width="200"/>
-<img src="images/IMG_20220101_215255.jpg" alt="drawing" width="200"/>
-<img src="images/IMG_20220102_024539.jpg" alt="drawing" width="200"/>
+<img src= "images/Schematic.png">
 <br><br>
-
-# Resulte
-
 
 # Conclusion
 
-The idea, measuring with potentiometer not work well. To place in correct position require playing with poteniometer which causes calsulation mistakes. Also, when voltage is not constant it begins to get crazy. But this device realy helped me with debugging my robot. 
+The idea, of measuring with a potentiometer is a bit problematic. To place poteniometer in correct position require adjustment which can cause little deviation. Also, It work properly only on constant voltage. Even then, this device significiantly helped me to debug my robot. 
 
