@@ -5,18 +5,18 @@ Main purpose of the servo is to turn to given angle. But unfortunately servos li
 
 The idea is to give input througt first potentiometer and attach servo to second potentiometer then measure differences between them.
 
-# Prerequire
+# Prerequisites
 
 ## I used this parts:
 - Arduino Nano 
 - OLED 128x32
-- Servo 
-- 2X 10k Potetiometer
+- 1x3P Header for Servo input
+- Two 10k Potetiometer
 - Button  
 - 220uf condensator 
 - Prototype Board with 18x27 pins
  
-# Hardware
+# Schematic
 
 <img src= "images/Schematic.png">
 <br><br>
