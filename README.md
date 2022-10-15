@@ -12,7 +12,7 @@ The idea is to give input througt first potentiometer and attach servo to second
 - Servo 
 - 2X 10k Potetiometer
 - Button  
-- 47uf condensator 
+- 220uf condensator 
 - Prototype Board with 18x27 pins
  
 # Hardware

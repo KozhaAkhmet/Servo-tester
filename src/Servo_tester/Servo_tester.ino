@@ -25,6 +25,7 @@ void setup() {
   servo.attach(servoPin);     // Attaching servo to servo`s pin
   
   display.begin(SSD1306_SWITCHCAPVCC, 0x3C); // Enable Oled display
+  pinMode(buttonPin, INPUT);
   Serial.begin(9600);                        // Enable serial
 }
 
@@ -61,6 +62,13 @@ void loop() {
      page = 0;     // Reset page
   }
 
+  Serial.print(digitalRead(buttonPin));
+  Serial.print(" ");
+  Serial.print(page);
+  Serial.print("\n");
+  
+
+  
   free(data);
   delay(500);
 }
