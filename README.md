@@ -22,9 +22,11 @@ The idea is to give input througt first potentiometer and attach servo to second
 
 When embedding, It require bit adjustments. 
   - Turn servo`s potentiometer in default position then by checking the potentiometer values throgh screen, begin to glue attachment. 
-
+<p align ="center">
    <img src="video/Servotester2.gif" alt="drawing" width="80%"/>
-   <br><br>
+</p>
+
+   - By adding little platform about 9 mm heigh is enough to position servo to attachment.
 
 # Schematic
 
