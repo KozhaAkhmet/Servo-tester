@@ -22,11 +22,13 @@ int page = 0;         // For page number
 bool pressed = false; // To prevent button sticking
 
 void setup() {
-  servo.attach(servoPin);     // Attaching servo to servo`s pin
-  
   display.begin(SSD1306_SWITCHCAPVCC, 0x3C); // Enable Oled display
   pinMode(buttonPin, INPUT);
   Serial.begin(9600);                        // Enable serial
+
+  delay(300);
+
+  servo.attach(servoPin);     // Attaching servo to servo`s pin
 }
 
 void loop() {
