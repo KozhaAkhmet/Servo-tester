@@ -4,9 +4,8 @@
 Main purpose of the servo is to turn to given angle. But unfortunately servos like SG90 and MG90 could`t do it properly. Due to that factory defect, it causes wrong computations. 
 
 The idea is to give input througt first potentiometer and attach servo to second potentiometer then measure differences between them.
-<p>
-    <img src="images/IMG_2179.jpg" alt="drawing" width="100%"/>
-</p>
+
+![picture](images/IMG_2179.JPG)
 # Components
 
 ## I used this parts:
