@@ -4,9 +4,9 @@
 Main purpose of the servo is to turn to given angle. But unfortunately servos like SG90 and MG90 could`t do it properly. Due to that factory defect, it causes wrong computations. 
 
 The idea is to give input througt first potentiometer and attach servo to second potentiometer then measure differences between them.
-
-<img src="images/IMG_2179.jpg" alt="drawing" width="100%"/>
-
+<p>
+    <img src="images/IMG_2179.jpg" alt="drawing" width="100%"/>
+</p>
 # Components
 
 ## I used this parts:
@@ -23,7 +23,9 @@ The idea is to give input througt first potentiometer and attach servo to second
 
 When embedding, It require bit adjustments. 
   - Turn servo`s potentiometer in default position then by checking the potentiometer values throgh screen, begin to glue attachment. 
-  ![gif](video/Servotester2.gif)
+<p align ="center">
+   <img src="video/Servotester2.gif" alt="drawing" width="80%"/>
+</p>
 
    - By adding little platform about 9 mm heigh is enough to position servo to attachment.
 
