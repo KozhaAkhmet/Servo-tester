@@ -13,8 +13,8 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 Servo servo;        // Creating servo
 
 
-int pot_pin1 = A0;  // First potentiometer
-int pot_pin2 = A1;  // Seconr potentiometer
+int potPinRegulator = A0;  // First potentiometer
+int potPinServo = A1;  // Seconr potentiometer
 int servoPin =  9;
 int buttonPin = 3;
 
@@ -34,12 +34,12 @@ void loop() {
   int *data = (int*)malloc(4*sizeof(int));
   
   // Reading raw values.
-  data[0]=analogRead(pot_pin1);  
-  data[1]=analogRead(pot_pin2);  
+  data[0]=analogRead(potPinRegulator);  
+  data[1]=analogRead(potPinServo);  
 
   // Converting raw values to angles. 
-  data[2]=map(analogRead(pot_pin1), 0, 685, 0, 180);
-  data[3]=map(analogRead(pot_pin2), 0, 1023, 0, 270);
+  data[2]=map(analogRead(potPinRegulator), 0, 685, 0, 180);   // Requere manually measuring 90 degree according to potentiometer value. In my case, It 685.
+  data[3]=map(analogRead(potPinServo), 0, 1023, 0, 270);
  
   servo.write(data[3]);    // Wrtiting data to servo.
 

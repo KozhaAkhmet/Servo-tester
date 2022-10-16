@@ -1,11 +1,12 @@
 # Servo Tester V0
-<img src="images/IMG_20220102_024539.jpg" alt="drawing" width="100%"/>
 
 Main purpose of the servo is to turn to given angle. But unfortunately servos like SG90 and MG90 could`t do it properly. Due to that factory defect, it causes wrong computations. 
 
 The idea is to give input througt first potentiometer and attach servo to second potentiometer then measure differences between them.
 
-# Prerequisites
+<img src="images/IMG_2179.jpg" alt="drawing" width="100%"/>
+
+# Components
 
 ## I used this parts:
 - Arduino Nano 
@@ -15,7 +16,16 @@ The idea is to give input througt first potentiometer and attach servo to second
 - Button  
 - 220uf condensator 
 - Prototype Board with 18x27 pins
+- Servo`s Attachment
  
+# Embedding
+
+When embedding, It require bit adjustments. 
+  - Turn servo`s potentiometer in default position then by checking the potentiometer values throgh screen, begin to glue attachment. 
+
+   <img src="video/Servotester2.gif" alt="drawing" width="80%"/>
+   <br><br>
+
 # Schematic
 
 <img src= "images/Schematic.png">
