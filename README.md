@@ -1,9 +1,25 @@
 # Servo Tester V0
 
-## *This project is on maintains....*
 Main purpose of the servo is to turn to given angle. But unfortunately servos like SG90 and MG90 could`t do it properly. Due to that factory defect, it causes wrong computations. 
 
 The idea is to give input througt first potentiometer and attach servo to second potentiometer then measure differences between them.
+
+<a >
+    <br>
+    <img alt="Qries" src="https://img.shields.io/static/v1?label=Project%20Status&message=Under%20Development&color=yellow&?style=for-the-badge"
+    width=280 height=30>
+    <br>
+ </a>
+
+|                          | On progress | Completed |
+| ------------------------ | :---------: | :-------: |
+| Stability                |   &cross;   |           |
+| Platform for Servo       |   &cross;   |           |
+| OLED Connection          |             |  &cross;  |
+| Button Connection        |   &cross;   |           |
+| Potentiometer Connection |             |  &cross;  |
+
+<br>
 
 ![picture](images/IMG_2179.JPG)
 # Components
@@ -31,7 +47,7 @@ When embedding, It require bit adjustments.
 # Schematic
 
 <img src= "images/Schematic.png">
-<br><br>
+<br>
 
 # Conclusion
 
